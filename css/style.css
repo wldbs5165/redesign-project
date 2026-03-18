@@ -1,0 +1,399 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&display=swap");
+@import "./fonts.css";
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  scroll-behavior: smooth;
+}
+body {
+  overflow-x: hidden;
+  background-color: #fff;
+  font-family: "Noto Sans KR", sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.6;
+  color: #1a1a1a;
+  letter-spacing: -0.02em;
+  font-optical-sizing: auto;
+}
+.container {
+  max-width: 1920px;
+  margin: 0 auto;
+}
+ul,
+li {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+  color: #1a1a1a;
+}
+img {
+  border: 0;
+  vertical-align: middle;
+}
+/* ----------헤더 영역---------- */
+header {
+  display: flex;
+  position: sticky;
+  top: 0;
+  z-index: 9999;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  height: 96px;
+  gap: 560px;
+  padding: 0 160px;
+  background-color: #27a169;
+}
+.logo {
+  align-items: center;
+  justify-content: center;
+}
+.logo img {
+  width: 200px;
+  height: 53px;
+}
+.navigation {
+  display: flex;
+  gap: 84px;
+}
+.navigation .menu-list {
+  display: flex;
+  gap: 84px;
+}
+.navigation .menu-list a {
+  font-size: 16px;
+  font-weight: bold;
+  color: #fff7ee;
+}
+.nav-btn {
+  align-items: center;
+  justify-content: center;
+  background: none;
+  border: none;
+  padding: 0;
+}
+.nav-btn a {
+}
+.nav-btn img {
+  width: 18px;
+  height: 12px;
+}
+/* ----------메인 영역--------- */
+main {
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+/* ----------히어로 영역---------- */
+.hero {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 984px;
+  overflow: hidden;
+  background: linear-gradient(to bottom, #27a169, #fff7ee);
+}
+.hero img {
+  position: absolute;
+}
+.house1 {
+  width: 360px;
+  height: 360px;
+  left: 136px;
+  top: 6px;
+}
+.right-book {
+  width: 1820px;
+  height: 1820px;
+  left: 1285px;
+  top: -980px;
+}
+.left-book {
+  width: 1128px;
+  height: 1128px;
+  top: 114px;
+  left: -30px;
+}
+.peper {
+  width: 1518px;
+  height: 1684px;
+  left: 562px;
+  top: -526px;
+}
+.book {
+  width: 232px;
+  height: 186px;
+  top: 768px;
+  left: 377px;
+}
+.house2 {
+  width: 586px;
+  height: 586px;
+  top: 630px;
+  left: 1179px;
+}
+.hero-main {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  gap: 30px;
+  z-index: 2;
+}
+.hero-title {
+  display: flex;
+  flex-direction: column;
+  /* gap: 41px; */
+  align-items: center;
+  justify-content: center;
+}
+.hero-title h1 {
+  color: #fff7ee;
+  font-size: 56px;
+  font-weight: 600;
+}
+.hero-title h2 {
+  color: #fff7ee;
+  font-size: 24px;
+  font-weight: 400;
+}
+.cta-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 8px 24px;
+  border: none;
+  background-color: #fff7ee;
+  border-radius: 16px;
+}
+.cta-btn:hover {
+  background-color: #ffe5c8;
+}
+.cta-btn a {
+  color: #1a1a1a;
+  font-size: 24px;
+  font-weight: 400;
+}
+/* ----------브랜드 스토리 영역---------- */
+.brandstory-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 120px;
+  padding: 160px 0;
+}
+/* -----지도 영역----- */
+.map-section {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 1400px;
+}
+
+.map-section img {
+  /* position: absolute; ---이거 있으면 지도 일러스트도 absolute됨(x)*/
+}
+
+.map-card {
+  position: relative;
+}
+.map-img {
+  width: 475px;
+  height: 679px;
+}
+.map-text {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+.map-text:nth-of-type(1) {
+  top: 100px;
+  left: 270px;
+}
+.map-text:nth-of-type(2) {
+  top: 400px;
+  left: 300px;
+}
+.map-text:nth-of-type(3) {
+  top: 480px;
+  left: 70px;
+}
+.map-text:nth-of-type(4) {
+  top: 280px;
+  left: 100px;
+}
+.map-text:nth-of-type(5) {
+  top: 110px;
+  left: 90px;
+}
+.map-text .map-title {
+  font-size: 36px;
+  font-weight: 500;
+  color: #fff7ee;
+}
+.map-text .map-num {
+  font-size: 16px;
+  font-weight: 300;
+  color: #fff7ee;
+}
+.lib-card {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+.lib-1 {
+  width: 106px;
+  height: 141px;
+  top: -60px;
+  left: 890px;
+}
+.lib-1 img {
+  width: 100%;
+  height: 100%;
+}
+.lib-1 .lib-title {
+}
+.lib-1 .lib-title p {
+}
+.lib-2 {
+  width: 332px;
+  height: 169px;
+  top: 70px;
+  left: 890px;
+}
+.lib-2 img {
+  width: 100%;
+  height: 100%;
+}
+.lib-2 .lib-title {
+}
+.lib-2 .lib-title p {
+}
+.lib-3 {
+  width: 180px;
+  height: 120px;
+  top: 300px;
+  left: 970px;
+}
+.lib-3 img {
+  width: 100%;
+  height: 100%;
+}
+.lib-3 .lib-title {
+}
+.lib-3 .lib-title p {
+}
+.lib-4 {
+  width: 174px;
+  height: 116px;
+  top: 500px;
+  left: 930px;
+}
+.lib-4 img {
+  width: 100%;
+  height: 100%;
+}
+.lib-4 .lib-title {
+}
+.lib-4 .lib-title p {
+}
+.lib-5 {
+  width: 192px;
+  height: 128px;
+  top: 560px;
+  left: 230px;
+}
+.lib-5 img {
+  width: 100%;
+  height: 100%;
+}
+.lib-5 .lib-title {
+}
+.lib-5 .lib-title p {
+}
+.lib-6 {
+  width: 164px;
+  height: 109px;
+  top: 350px;
+  left: 300px;
+}
+.lib-6 img {
+  width: 100%;
+  height: 100%;
+}
+.lib-6 .lib-title {
+}
+.lib-6 .lib-title p {
+}
+.lib-7 {
+  width: 177px;
+  height: 133px;
+  top: 160px;
+  left: 240px;
+}
+.lib-7 img {
+  width: 100%;
+  height: 100%;
+}
+.lib-7 .lib-title {
+}
+.lib-7 .lib-title p {
+}
+.lib-8 {
+  width: 183px;
+  height: 122px;
+  top: 0;
+  left: 290px;
+}
+.lib-8 img {
+  width: 100%;
+  height: 100%;
+}
+.lib-8 .lib-title {
+}
+.lib-8 .lib-title p {
+}
+/* -----텍스트 영역----- */
+.text-section {
+}
+.text-section p {
+}
+.text-section span {
+}
+/* ----------스와이퍼 영역---------- */
+.swiper {
+  width: 100%;
+  height: 100%;
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #444;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
