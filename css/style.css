@@ -63,6 +63,11 @@ header {
   padding: 0 160px;
   background-color: #27a169;
 }
+header.scrolled {
+  background: rgba(39, 161, 105, 0.7);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+}
 .logo {
   align-items: center;
   justify-content: center;
@@ -119,6 +124,7 @@ main {
 }
 .hero img {
   position: absolute;
+  pointer-events: none;
 }
 .house1 {
   width: 360px;
@@ -200,6 +206,7 @@ main {
   font-weight: 400;
 }
 .cta-btn {
+  position: relative;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -207,14 +214,23 @@ main {
   border: none;
   background-color: #fff7ee;
   border-radius: 16px;
+  color: #27a169;
+  font-size: 16px;
+  font-weight: 600;
+  padding: 8px 24px;
+  cursor: pointer;
+  z-index: 9999;
+  transition: all 0.3s ease;
+  /* hover시 바뀌는 모든 요소를 0.3초 동안 시작과 처음은 느리게 중간은 빠르게 */
+  box-shadow: 0 4px 5px rgba(0, 0, 0, 0.15);
 }
 .cta-btn:hover {
-  background-color: #c57f2e;
+  transform: translateY(-3px);
+  box-shadow: 0 12px 10px rgba(0, 0, 0, 0.25);
+  font-weight: 700;
 }
-.cta-btn a {
-  color: #1a1a1a;
-  font-size: 24px;
-  font-weight: 400;
+.cta-btn a:hover {
+  /* font-weight: 700; */
 }
 /* ----------브랜드 스토리 영역---------- */
 .brandstory-section {
@@ -288,6 +304,9 @@ main {
   align-items: center;
   justify-content: center;
   text-align: center;
+}
+.lib-card img:hover {
+  /* box-shadow: 0 8px 10px rgba(0, 0, 0, 0.7); */
 }
 .lib-1 {
   width: 120px;
@@ -401,19 +420,30 @@ main {
 .text-section p {
   font-size: 48px;
   font-weight: 400;
+  color: #1a1a1a;
 }
 .text-section span {
   font-size: 64px;
   font-weight: 600;
+  color: #27a169;
 }
 .text-section a {
-  font-size: 24px;
+  font-size: 16px;
   font-weight: 400;
   background-color: #464ba6;
   border-radius: 16px;
   padding: 10px 16px;
   color: #fff7ee;
   border: none;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 5px rgba(0, 0, 0, 0.15);
+}
+.text-section a:hover {
+  background-color: #fff7ee;
+  color: #464ba6;
+  font-weight: 600;
+  /* transform: translateY(-3px); */
+  box-shadow: 0 12px 10px rgba(0, 0, 0, 0.25);
 }
 /* ----------추천 도서 영역---------- */
 .librecom-section {
@@ -471,13 +501,16 @@ main {
   font-size: 16px;
   font-weight: 200;
 }
+.search-container input:focus {
+  outline: none;
+}
 .search-container a {
   position: absolute;
   right: 16px;
 }
 .search-container a img {
-  width: 36px;
-  height: 36px;
+  width: 32px;
+  height: 32px;
   opacity: 20%;
 }
 .tag {
@@ -496,6 +529,13 @@ main {
   color: #fff7ee;
   font-size: 16px;
   font-weight: 500;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 5px rgba(0, 0, 0, 0.15);
+}
+.tag a:hover {
+  background-color: #fff7ee;
+  color: #464ba6;
+  box-shadow: 0 12px 10px rgba(0, 0, 0, 0.25);
 }
 .book-container {
   display: flex;
